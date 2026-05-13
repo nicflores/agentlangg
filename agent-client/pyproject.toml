@@ -1,0 +1,12 @@
+[project]
+name = "agent-client"
+version = "0.1.0"
+description = "LangGraph ReAct agent that talks to mcp-postgres-server via Ollama (qwen2.5:3b)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-mcp-adapters>=0.2.2",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.1.10",
+    "pydantic-settings>=2.14.1",
+]
