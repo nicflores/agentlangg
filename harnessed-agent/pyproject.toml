@@ -1,0 +1,25 @@
+[project]
+name = "harnessed-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+  "langgraph>=1.1.10",
+  "langchain-core>=1.4.0",
+  "langchain-ollama>=1.1.0",
+  "tavily-python>=0.7.24",
+  "yfinance>=1.3.0",
+  "python-dotenv>=1.2.2",
+]
+
+[project.scripts]
+ticker-agent = "agent:main"
+
+[dependency-groups]
+dev = ["pytest>=9.0.3", "pytest-asyncio>=1.3.0", "ruff>=0.15.13"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
